@@ -1,0 +1,18 @@
+{
+  "name": "slack-rag-bot",
+  "version": "0.2.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "bot": "node src/bot.js",
+    "backfill:all": "node src/indexer/backfill_all.js",
+    "sync:once": "node src/indexer/sync_once.js",
+    "sync:cron": "node src/indexer/sync_cron.js"
+  },
+  "dependencies": {
+    "@slack/bolt": "^3.22.0",
+    "@slack/web-api": "^7.6.0",
+    "dotenv": "^16.4.5",
+    "pg": "^8.12.0"
+  }
+}
