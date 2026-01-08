@@ -1,4 +1,5 @@
-import { WebClient } from "@slack/web-api";
+import pkg from "@slack/web-api";
+const { WebClient } = pkg;
 
 export function slackClient() {
   const token = process.env.SLACK_BOT_TOKEN;
